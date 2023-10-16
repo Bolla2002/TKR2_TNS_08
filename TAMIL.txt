@@ -1,0 +1,51 @@
+interface India
+{
+    public void famousPlaces(); //abstract method
+    public void foodItems(); //abstract method
+    public void festivals(); //abstract method
+    public void temples(); //abstract method 
+}
+public class TmailNadu implements India
+{
+    public void famousPlaces()
+    {
+        System.out.println("FAMOUS PLACES:");
+        System.out.println("PLACE - OOTY");
+        System.out.println("PLACE - KODAIKANAL");
+        System.out.println("PLACE - MAHABALIPURAM");
+        System.out.println("PLACE - RAMESHWARAM");
+    }
+     public void foodItems()
+     {
+        System.out.println("FOOD ITEMS:");
+        System.out.println("FOOD - SAMBAR IDLI");
+        System.out.println("FOOD - RASAM");
+        System.out.println("FOOD - KARIMEEN POLLICHATHU");
+        System.out.println("FOOD - PONGAL");
+     }
+     public void festivals()
+     {
+         System.out.println("FESTIVALS:");
+        System.out.println("FESTIVAL - PONGAL");
+        System.out.println("FESTIVAL - KARTHIGAI DEEPAM");
+        System.out.println("FESTIVAL - AADI PERUKKU");
+        System.out.println("FESTIVAL - CHENNAI MUSIC AND DANCE");
+     }
+     public void temples()
+     {
+        System.out.println("TEMPLES:");
+        System.out.println("TEMPLE - KANYAKUMARI");
+        System.out.println("TEMPLE - MADURAI");
+        System.out.println("TEMPLE - BRIHADEESHWARI");
+        System.out.println("TEMPLE - CHIDAMBARAM NATRAJ");
+     }
+     public static void main(String args[])
+     {
+         India tamil = new TamilNadu();
+         System.out.println("TamilNadu:");
+         tamil.famousPlaces();
+         tamil.foodItems();
+         tamil.festivals();
+         tamil.temples();
+     }
+}

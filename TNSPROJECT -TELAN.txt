@@ -1,0 +1,51 @@
+interface India
+{
+    public void famousPlaces(); //abstract method
+    public void foodItems(); //abstract method
+    public void festivals(); //abstract method
+    public void temples(); //abstract method 
+}
+public class Telangana implements India
+{
+    public void famousPlaces()
+    {
+        System.out.println("FAMOUS PLACES:");
+        System.out.println("PLACE - CHARMINAR");
+        System.out.println("PLACE - GOLCONDA FORT");
+        System.out.println("PLACE - HUSSIANSAGAR");
+        System.out.println("PLACE - RAMOJI FILM CITY");
+    }
+     public void foodItems()
+     {
+        System.out.println("FOOD ITEMS:");
+        System.out.println("FOOD - CHICKEN BIRYANI");
+        System.out.println("FOOD - MUTTON KAIMA");
+        System.out.println("FOOD - FISH FRY");
+        System.out.println("FOOD - MIRCHI BAJJI");
+     }
+     public void festivals()
+     {
+         System.out.println("FESTIVALS:");
+        System.out.println("FESTIVAL - BONALU");
+        System.out.println("FESTIVAL - SAMMAKKA SAARAKKA JAATHARA");
+        System.out.println("FESTIVAL - DUSSEHRA");
+        System.out.println("FESTIVAL - PEERLA PANDUGA");
+     }
+     public void temples()
+     {
+        System.out.println("TEMPLES:");
+        System.out.println("TEMPLE - THOUSAAND PILLAR");
+        System.out.println("TEMPLE - RAMAPPA");
+        System.out.println("TEMPLE - YADADRI");
+        System.out.println("TEMPLE - BADRACHALAM");
+     }
+     public static void main(String args[])
+     {
+         India telan=new Telangana();
+         System.out.println("TELANGANA:");
+         telan.famousPlaces();
+         telan.foodItems();
+         telan.festivals();
+         telan.temples();
+     }
+}

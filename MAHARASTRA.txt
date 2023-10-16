@@ -1,0 +1,51 @@
+interface India
+{
+    public void famousPlaces(); //abstract method
+    public void foodItems(); //abstract method
+    public void festivals(); //abstract method
+    public void temples(); //abstract method 
+}
+public class Maharastra implements India
+{
+    public void famousPlaces()
+    {
+        System.out.println("FAMOUS PLACES:");
+        System.out.println("PLACE - AJANTHA & ALLORA CAVES");
+        System.out.println("PLACE - LAVASA");
+        System.out.println("PLACE - GATE WAY OF INDIA");
+        System.out.println("PLACE - TAJ HOTEL");
+    }
+     public void foodItems()
+     {
+        System.out.println("FOOD ITEMS:");
+        System.out.println("FOOD - PAV BHAJI");
+        System.out.println("FOOD - POHA");
+        System.out.println("FOOD - VADA PAV");
+        System.out.println("FOOD - PURAM POLI");
+     }
+     public void festivals()
+     {
+        System.out.println("FESTIVALS:");
+        System.out.println("FESTIVAL - GUDI PADWA");
+        System.out.println("FESTIVAL - GANESH CHATURTHI");
+        System.out.println("FESTIVAL - POLA FESTIVAL");
+        System.out.println("FESTIVAL - BHAUBEEJ");
+     }
+     public void temples()
+     {
+        System.out.println("TEMPLES:");
+        System.out.println("TEMPLE - SHIRDI SAI BABA ");
+        System.out.println("TEMPLE - VITHOBA");
+        System.out.println("TEMPLE - PANDURANG TEMPLE");
+        System.out.println("TEMPLE - TRIAMBAKESHWAR TEMPLE");
+     }
+     public static void main(String args[])
+     {
+         India Maha =new Maharastra();
+         System.out.println("Maharastra :");
+         Maha.famousPlaces();
+         Maha.foodItems();
+         Maha.festivals();
+         Maha.temples();
+     }
+}

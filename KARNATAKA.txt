@@ -1,0 +1,51 @@
+interface India
+{
+    public void famousPlaces(); //abstract method
+    public void foodItems(); //abstract method
+    public void festivals(); //abstract method
+    public void temples(); //abstract method 
+}
+public class Karnataka implements India
+{
+    public void famousPlaces()
+    {
+        System.out.println("FAMOUS PLACES:");
+        System.out.println("PLACE - MYSORE PALACE");
+        System.out.println("PLACE - COORG");
+        System.out.println("PLACE - GOKARNE");
+        System.out.println("PLACE - TOG FALLS");
+    }
+     public void foodItems()
+     {
+        System.out.println("FOOD ITEMS:");
+        System.out.println("FOOD - KOLI SAARU");
+        System.out.println("FOOD - MYSORE MASALA DOSA");
+        System.out.println("FOOD - RAGI MUDDA");
+        System.out.println("FOOD - BISI BELEBATH");
+     }
+     public void festivals()
+     {
+         System.out.println("FESTIVALS:");
+        System.out.println("FESTIVAL - KARAGA");
+        System.out.println("FESTIVAL - PATTADAKAL");
+        System.out.println("FESTIVAL - HAMPI");
+        System.out.println("FESTIVAL - VAIRAMUDI");
+     }
+     public void temples()
+     {
+        System.out.println("TEMPLES:");
+        System.out.println("TEMPLE - VIRUPAKSHA");
+        System.out.println("TEMPLE - CHENNAKESAVA");
+        System.out.println("TEMPLE - HOYSALESWARA");
+        System.out.println("TEMPLE - SRI KRISHNA MATHA");
+     }
+     public static void main(String args[])
+     {
+         India karna= new Karnataka();
+         System.out.println("Karnataka :");
+         karna.famousPlaces();
+         karna.foodItems();
+         karna.festivals();
+         karna.temples();
+     }
+}

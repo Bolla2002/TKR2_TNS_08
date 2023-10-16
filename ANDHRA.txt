@@ -1,0 +1,51 @@
+interface India
+{
+    public void famousPlaces(); //abstract method
+    public void foodItems(); //abstract method
+    public void festivals(); //abstract method
+    public void temples(); //abstract method 
+}
+public class AndhraPradesh implements India
+{
+    public void famousPlaces()
+    {
+        System.out.println("FAMOUS PLACES:");
+        System.out.println("PLACE - RK BEACH");
+        System.out.println("PLACE - SUBMARRAIN MUSEUM");
+        System.out.println("PLACE - ARAKU VALLEY");
+        System.out.println("PLACE - VIZAG BEACH");
+    }
+     public void foodItems()
+     {
+        System.out.println("FOOD ITEMS:");
+        System.out.println("FOOD - RAYALASEEMA BIRYANI");
+        System.out.println("FOOD - BOBBATLU");
+        System.out.println("FOOD - FISH FRY");
+        System.out.println("FOOD - ULAVACHARU BIRYANI");
+     }
+     public void festivals()
+     {
+         System.out.println("FESTIVALS:");
+        System.out.println("FESTIVAL - TASKAR BONALU");
+        System.out.println("FESTIVAL - PEERLA PANDAGA");
+        System.out.println("FESTIVAL - DECCAN FESTIVAL");
+        System.out.println("FESTIVAL - GODAVARI PUSKARALU");
+     }
+     public void temples()
+     {
+        System.out.println("TEMPLES:");
+        System.out.println("TEMPLE - TIRUPATI");
+        System.out.println("TEMPLE - SRI SAILAM");
+        System.out.println("TEMPLE - LEAPKSHI");
+        System.out.println("TEMPLE - KANAKADURGA");
+     }
+     public static void main(String args[])
+     {
+         India andhra = new AndhraPradesh();
+         System.out.println("AndhraPradesh :");
+         andhra.famousPlaces();
+         andhra.foodItems();
+         andhra.festivals();
+         andhra.temples();
+     }
+}
